@@ -1,0 +1,26 @@
+/* Assurez-vous que la page prend toute la hauteur de la fenêtre */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* Le conteneur principal occupe toute la hauteur disponible */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* L'ensemble de la hauteur de la fenêtre */
+}
+
+/* Le contenu principal s'étend pour prendre tout l'espace disponible */
+main {
+    flex: 1; /* Prend tout l'espace restant entre le header et le footer */
+    padding: 20px;
+}
+
+/* Styles pour le footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
