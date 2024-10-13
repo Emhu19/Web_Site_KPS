@@ -436,11 +436,13 @@ ul {
 
 .Projets {
     padding: 50px;
+/*     max-height: 800px; */
+    overflow-y: scroll; /* Permet de scroller verticalement */
 }
 
 .Projets-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(2, 1fr); /* Fixe à 2 colonnes pour les écrans d'ordinateurs */
     justify-items: center;
 }
 
@@ -450,7 +452,7 @@ ul {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     width: auto;
-    max-width: 600px;
+    max-width: 500px;
     max-height: 500px;
     margin: 2px auto;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
@@ -503,7 +505,7 @@ ul {
   height: var(--height);
   display: grid;
   grid-auto-flow: column;
-  background: var(--sun);
+  background: var(--rain); /* color des 3 boutons */
   border-radius: var(--radius);
   grid-auto-columns: 1fr;
   position: relative;
@@ -579,7 +581,7 @@ ul {
   display: grid;
   border-radius: calc(var(--radius) - var(--border));
   place-items: center;
-  color: var(--rain);
+  color: black; /* color du texte */
   transition: background, color;
   transition-duration: 0.25s;
   transition-timing-function: var(--ease, ease);
@@ -587,9 +589,11 @@ ul {
 
 .input:not(:checked) + .label:hover {
   --highlight: 0.35;
-  background: hsl(0 50% 50%);
+  background: hsl(0 100% 100%);  /*color du hover */
 }
-
+.input:checked + .label {
+  color: cyan; /* color du texte dans le bouton slectionné en inverser */
+}
 
 
 .tabs::after {
@@ -597,7 +601,7 @@ ul {
   content: "";
   width: calc(100% / var(--count));
   height: 100%;
-  background: hsl(0 50% 50%);
+  background: hsl(0 100% 100%); /* color du bouton qui est séléctionné */
   position: absolute;
   border-radius: calc(var(--radius) - var(--border));
   mix-blend-mode: difference;

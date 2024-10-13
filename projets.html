@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KPS - Page d'accueil</title>
+    <title>KPS - Projets</title>
     <link rel="icon" href="img/favicon.png" type="image/png">
     <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
 <!--    <div class="start_page">
@@ -14,6 +15,8 @@
         <div class="start_text">L'association Kernel Panic Systems</div>
         <div class="hide1"><div class="hidden1"></div></div>
     </div>-->
+
+    <!-- ***************************SECTION HEADER********************************************-->
     <header>
         <div class="logo">
             <a href = "index.html"><img src="img/kps.svg" alt="Logo de KPS"/></a>
@@ -34,6 +37,8 @@
         </nav>
     </header>
     <main>
+
+    <!-- ***************************SECTION BOUTON PROJET ********************************************-->
     <div class="body_tabs">
         <div class="tabs">
             <input
@@ -64,33 +69,73 @@
         </div>
     </div>
 
+                                                                <!-- ***************************SECTION PROJET ********************************************-->
+
     <section class="Projets">
 
-<!--         <h1>Nos Projets actuel</h1> -->
+</section>
         <div class="Projets-grid">
-            <div class="Projets-card">
-                <img src="https://kzero.com/wp-content/uploads/2023/10/kzero-what-is-a-key-logger-keylogger.webp" alt="KeyLogger" class="Projets-image">
-                <div class="Projets-info">
-                    <h3>KeyLogger</h3>
-                    <p>Un KeyLogger pour te hacker sa grand mere</p>
-                    <p class="year">2024</p>
+        <!-- ***************************SECTION PROJET ACTUEL********************************************-->
+            <div id="projet-actuel-content" class="projet-content">
+                <!-- **************SECTION PROJET ACTUEL 1*********************-->
+                <div class="Projets-card">
+                    <img src="https://kzero.com/wp-content/uploads/2023/10/kzero-what-is-a-key-logger-keylogger.webp" alt="KeyLogger" class="Projets-image">
+                    <div class="Projets-info">
+                        <h3>KeyLogger</h3>
+                        <p>Un KeyLogger pour te hacker sa grand mere</p>
+                        <p class="year">2024</p>
+                    </div>
+                </div>
+                <!-- **************SECTION PROJET ACTUEL 2*********************-->
+                <div class="Projets-card">
+                    <img src="https://kzero.com/wp-content/uploads/2023/10/kzero-what-is-a-key-logger-keylogger.webp" alt="KeyLogger" class="Projets-image">
+                    <div class="Projets-info">
+                        <h3>KeyLogger</h3>
+                        <p>Un KeyLogger pour te hacker sa grand mere</p>
+                        <p class="year">2024</p>
+                    </div>
                 </div>
             </div>
 
+        <!-- ***************************SECTION IDEE DE FUTUR PROJET *******************************************-->
+            <div id="projet-futur-content" class="projet-content" style="display: none;">
+
+                <!-- **************SECTION FUTUR 1*********************-->
+                <div class="Projets-card">
+                    <img src="https://kzero.com/wp-content/uploads/2023/10/kzero-what-is-a-key-logger-keylogger.webp" alt="KeyLogger" class="Projets-image">
+                    <div class="Projets-info">
+                        <h3>Site d'emprunt</h3>
+                        <p>Un site d'emprunt</p>
+                        <p class="year">2024</p>
+                    </div>
+                </div>
+
+
+            <!-- **************SECTION FUTUR 2*********************-->
             <div class="Projets-card">
-                <img src="https://kzero.com/wp-content/uploads/2023/10/kzero-what-is-a-key-logger-keylogger.webp" alt="KeyLogger" class="Projets-image">
-                <div class="Projets-info">
-                    <h3>Site d'emprunt</h3>
-                    <p>Un site d'emprunt</p>
-                    <p class="year">2024</p>
+                    <img src="https://kzero.com/wp-content/uploads/2023/10/kzero-what-is-a-key-logger-keylogger.webp" alt="KeyLogger" class="Projets-image">
+                    <div class="Projets-info">
+                        <h3>Site d'emprunt</h3>
+                        <p>Un site d'emprunt</p>
+                        <p class="year">2024</p>
+                    </div>
                 </div>
             </div>
+    <!-- ***************************SECTION D'ANCIEN PROJET ********************************************-->
+            <div id="ancien-projet-content" class="projet-content" style="display: none;">
+
+            <!-- **************ANCIEN PROJET 1*********************-->
+                <h2>Ancien Projet</h2>
+                <p>Contenu de l'ancien projet.</p>
+            </div>
+
 
         </div>
-
-
     </section>
     </main>
+
+
+    <!-- ***************************SECTION FOOTER********************************************-->
 
     <footer>
     <div class="footer-container">
@@ -191,6 +236,6 @@
     </div>
 
 </footer>
-
+<script src="script.js"></script>
 </body>
 </html>
