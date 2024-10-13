@@ -1,26 +1,70 @@
-/* Assurez-vous que la page prend toute la hauteur de la fenêtre */
-html, body {
-    height: 100%;
-    margin: 0;
+.team-section {
+    padding: 50px;
+    background-color: #f9f9f9;
 }
 
-/* Le conteneur principal occupe toute la hauteur disponible */
-.wrapper {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* L'ensemble de la hauteur de la fenêtre */
-}
-
-/* Le contenu principal s'étend pour prendre tout l'espace disponible */
-main {
-    flex: 1; /* Prend tout l'espace restant entre le header et le footer */
+.member-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-/* Styles pour le footer */
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
+.member-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.member-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.member-name {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: #333;
+}
+
+.member-pseudo {
+    font-style: italic;
+    color: #777;
+    margin-bottom: 5px;
+}
+
+.member-role {
+    color: #555;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.social-links-membre {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+.social-link-membre {
+    display: inline-flex;
+    align-items: center;
+    color: #555;
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: color 0.3s ease;
+}
+
+.social-link-membre:hover {
+    color: #000; /* Change la couleur au survol */
+}
+
+.icon {
+    width: 24px;  /* Largeur de l'icône */
+    height: 24px; /* Hauteur de l'icône */
+    display: inline-block;
 }
