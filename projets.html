@@ -40,40 +40,45 @@
 
     <!-- ***************************SECTION BOUTON PROJET ********************************************-->
     <div class="body_tabs">
-        <div class="tabs">
-            <input
-                checked=""
-                value="Projet Actuel"
-                name="projet"
-                id="projet-actuel"
-                type="radio"
-                class="input"
-            />
-            <label for="projet-actuel" class="label">Projet Actuel</label>
-            <input
-                value="Projet Futur"
-                name="projet"
-                id="projet-futur"
-                type="radio"
-                class="input"
-            />
-            <label for="projet-futur" class="label">Idée de Projet</label>
-            <input
-                value="Ancien Projet"
-                name="projet"
-                id="ancien-projet"
-                type="radio"
-                class="input"
-            />
-            <label for="ancien-projet" class="label">Ancien Projet</label>
-        </div>
+    <div class="tabs">
+        <!-- Projet Actuel -->
+        <input
+            type="radio"
+            id="projet-actuel"
+            name="projet"
+            value="Projet Actuel"
+            class="input"
+            checked
+        />
+        <label for="projet-actuel" class="label">Projet Actuel</label>
+
+        <!-- Projet Futur -->
+        <input
+            type="radio"
+            id="projet-futur"
+            name="projet"
+            value="Projet Futur"
+            class="input"
+        />
+        <label for="projet-futur" class="label">Idée de Projet</label>
+
+        <!-- Ancien Projet -->
+        <input
+            type="radio"
+            id="ancien-projet"
+            name="projet"
+            value="Ancien Projet"
+            class="input"
+        />
+        <label for="ancien-projet" class="label">Ancien Projet</label>
     </div>
+</div>
+
 
                                                                 <!-- ***************************SECTION PROJET ********************************************-->
 
-    <section class="Projets">
+    <div class="Projets">
 
-</section>
         <!-- ***************************SECTION PROJET ACTUEL********************************************-->
         <div class="Projets-grid">
             <div id="projet-actuel-content" class="projet-content" style="display: none;">
@@ -95,8 +100,18 @@
                         <p class="year">2024</p>
                     </div>
                 </div>
+                                    <!-- **************SECTION PROJET ACTUEL 3*********************-->
+                <div class="Projets-card">
+                    <img src="https://kzero.com/wp-content/uploads/2023/10/kzero-what-is-a-key-logger-keylogger.webp" alt="KeyLogger" class="Projets-image">
+                    <div class="Projets-info">
+                        <h3>GogolPlex</h3>
+                        <p>Un moteur de recherche simplifier</p>
+                        <p class="year">2024</p>
+                    </div>
+                </div>
             </div>
         </div>
+
         <!-- ***************************SECTION IDEE DE FUTUR PROJET *******************************************-->
             <div id="projet-futur-content" class="projet-content" style="display: none;">
 
@@ -131,7 +146,6 @@
 
 
         </div>
-    </section>
     </main>
 
 

@@ -25,7 +25,10 @@
     --rain: #EA3031;
     --sun: #1D4ACF;
 }
-
+html {
+    height: 100%;
+    width:100%;
+}
 a:link {
     color: var(--rain);
     text-decoration: none;
@@ -61,7 +64,11 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
+
 }
+
+
+
 
 .wrapper {
     display: flex;
@@ -239,14 +246,14 @@ header img {
 }
 
 #about {
-    padding: 40px 20px; /* Espace autour de la section */
-    text-align: center; /* Centre le texte */
+    padding: 40px 20px;
+    text-align: center;
 }
 
 #about h2 {
     font-size: 2.5rem;
-    margin-bottom: 20px; /* Espace en bas du titre */
-    color: #ffffff; /* Couleur du texte */
+    margin-bottom: 20px;
+    color: #ffffff;
 
 }
 
@@ -262,9 +269,9 @@ footer {
      background: var(--Licorcie);
     padding: 10px 0;
     color: #333;
-    position: absolute;
+    position: fixe;
     min-width: 100vw;
-    bottom : 0;
+    bottom : 0%;
 }
 
 footer .copy {
@@ -436,13 +443,15 @@ ul {
 }
 
 .Projets {
-    padding: 50px;
+   padding: 50px;
     overflow-y: auto;
+    width: 100%;
+    max-width: 1200px;
 }
 
 .Projets-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(2000px, 0.2fr));
+    grid-template-columns: repeat(2, 1fr); /* Deux colonnes fixes */
     gap: 20px;
     justify-items: center;
 }
@@ -483,6 +492,11 @@ ul {
     color: var(--sun);
     margin-top: 1px;
 }
+
+#projet-actuel-content {
+    display: block; /* Visible par défaut */
+}
+
 
 /* Responsive Styles */
 @media (max-width: 768px) {

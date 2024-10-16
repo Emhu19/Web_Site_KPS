@@ -32,33 +32,3 @@ document.addEventListener('DOMContentLoaded', function () {
         showContent(checkedInput.id);
     }
 });
-
-document.addEventListener('DOMContentLoaded', function () {
-    const tabs = document.querySelectorAll('.input');
-    const contents = {
-        'membre-bg': document.getElementById('membre-bg-content'),
-        'membre-tech': document.getElementById('membre-tech-content'),
-        'membre-com': document.getElementById('membre-com-content'),
-    };
-
-    function showContent(selectedId) {
-        Object.keys(contents).forEach(id => {
-            contents[id].classList.add('hidden');  // Ajout de la classe 'hidden' pour masquer les sections
-        });
-
-        if (contents[selectedId]) {
-            contents[selectedId].classList.remove('hidden');  // Retirer la classe 'hidden' pour afficher le contenu
-        }
-    }
-
-    tabs.forEach(tab => {
-        tab.addEventListener('change', function () {
-            showContent(this.id);
-        });
-    });
-
-    const checkedInput = document.querySelector('.input:checked');
-    if (checkedInput) {
-        showContent(checkedInput.id);
-    }
-});
