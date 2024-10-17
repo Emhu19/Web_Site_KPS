@@ -754,7 +754,7 @@ ul {
 }
 
 .member-card {
-    background-color: white;
+    background-color: var(--Licorcie);;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -810,11 +810,108 @@ ul {
 }
 
 .social-link-membre:hover {
-    color: #000; /* Change la couleur au survol */
+    color: #000;
 }
 
 .icon {
-    width: 24px;  /* Largeur de l'icône */
-    height: 24px; /* Hauteur de l'icône */
+    width: 24px;
+    height: 24px;
     display: inline-block;
 }
+
+.events-section {
+    padding: 40px;
+    background-color: #000;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--Licorcie);;
+}
+
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+.event-card {
+    background-color: var(--Licorcie);;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    max-width: 800px;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.event-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.event-image {
+    width: 100%;
+    max-width: 340px;
+    height: auto;
+    max-height: 150px;
+    object-fit: cover;
+}
+.projet-content {
+    width:1100px;
+    position:relative;
+    display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-items: center;
+}
+.event-info {
+    padding: 15px;
+}
+
+.event-title {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.event-date,
+.event-location {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.event-description {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 10px;
+}
+
+.event-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: black; /* Couleur de fond du bouton */
+    color: white; /* Couleur du texte */
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.event-button:hover {
+    background-color: #fff; /* Couleur du bouton au survol */
+}
+
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .events-grid {
+        grid-template-columns: 1fr;
+    }
+}
+

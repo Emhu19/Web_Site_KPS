@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Afficher le contenu correspondant au bouton sélectionné
         if (contents[selectedId]) {
-            contents[selectedId].style.display = 'block';
+            contents[selectedId].style.display = 'grid';
         }
     }
 
